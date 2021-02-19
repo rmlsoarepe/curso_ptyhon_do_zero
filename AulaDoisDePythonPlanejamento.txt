@@ -1,0 +1,51 @@
+Aula 2 Python do Zero
+
+Novas perguntas do CEO:
+
+1. Qual a data do imóvel mais antigo no portifólio?
+2. Quantos imóveis tem o númeero máximo de andares?
+3. Criar uma classificassão para os imóveis, separando-ok em baixo e alto padrão, de acordo com o preço:
+    Acima de 540k -> Alto Padrão
+    Abaixo de 540k -> Baixo Padrão
+4. Gostaria de um relatório ordenado pelo preço e contendo as seguintes informações:
+-id do imóvel
+-data que o imóvel ficou disponivel para compra
+-tamanho do terreno
+-preço
+-a classificação do imóvel
+5. Gostaria de um mapa indicando onde as casas estão localizadas geograficamente?
+
+Planejamento de Soulução
+
+Produto final? (O que vou entregar? Planilha, email, gráfico, modelo de ml...?) 
+-Email + 2 anexos
+   -Texto: Perguntas e respostas
+-Anexo 1 - > Um relatório em .csv
+-Anexo 2 -> A foto de um mapa em html
+
+Ferramenta (Qual ferramenta que eu vou usar?)
+-Será feito no pytohn 3.8
+-Usaremos google collab
+
+Processo
+1. Qual a data do imóvel mais antigo no portifólio?
+	-Ordenar o conjunto de dados pela menor data
+	- Ver qual o menor valor na coluna datas
+2. Quantos imóveis tem o número máximo de andares?
+	-Identificar o maior valor na coluna andares
+	- localizar os imóveis que tenham este maior valor de andares
+	-Contabilizar os imóveis que tenham este maior valor de andares
+3. Criar uma classificassão para os imóveis, separando em baixo e alto padrão, de acordo com o preço:
+    Acima de 540k -> Alto Padrão
+    Abaixo de 540k -> Baixo Padrão
+	-Adicionar uma coluna chamada "Class" e criar uma condicional usando numpy onde imóveis que tenham 540k recebam o valor : high_Standard e imóveis que tenham nenos de 540k recebam low_standars
+
+4. Gostaria de um relatório ordenado pelo preço e contendo as seguintes informações:
+-id do imóvel
+-data que o imóvel ficou disponivel para compra
+-tamanho do terreno
+-preço
+-a classificação do imóvel
+	-Tirar uma peça do DF com os atributos selecionados e criar um CSV com essas informações
+5. Gostaria de um mapa indicando onde as casas estão localizadas geograficamente?
+	
